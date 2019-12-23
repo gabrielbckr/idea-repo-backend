@@ -17,7 +17,7 @@ def addIdea():
     description = request.form['description']
     wholeIdea = request.form['wholeIdea']
     ideaBusiness.SaveIdea({title, description, wholeIdea})
-    pass
+
 
 
 if __name__ == '__main__':
