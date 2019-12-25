@@ -1,5 +1,4 @@
 from Repository import IdeaRepository
-import json
 from Domain.Idea import *
 
 
@@ -12,6 +11,7 @@ class IdeaBusiness():
         return "200"
 
     def GetIdeas(self):
-        ownList = self.ideaRepository.GetIdeas()
-        response = json.dumps(ownList)
-        return response
+        ideaList = self.ideaRepository.GetIdeas()
+        ideaSchema = IdeaSchema(many=True)
+        response = ideaSchema.dumps(ideaList)
+        return {"items": response}

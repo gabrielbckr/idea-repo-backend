@@ -1,3 +1,5 @@
+from typing import List, Any
+
 import pymongo as mongo
 from Repository.BaseRepository import *
 from Domain.Idea import *
@@ -18,7 +20,7 @@ class IdeaRepository(BaseRepository):
 
     def GetIdeas(self):
         items = self.ideasCollection.find()
-        sx = []
+        sx: List[Idea] = []
         for x in items:
             sx.append(self.ConverToModel(x))
         return sx
