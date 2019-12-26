@@ -13,6 +13,7 @@ class IdeaRepository(BaseRepository):
         super(IdeaRepository, self)
         connection = mongo.MongoClient("mongodb://localhost/")
         self.ideasCollection = connection["idea-repo-db"].get_collection("ideas")
+        #TODO: Set database endpoint as environment variable
 
     def SaveIdea(self, idea):
         data = self.ConvertFromModel(idea)
