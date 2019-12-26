@@ -5,8 +5,8 @@ from Domain.Idea import *
 class IdeaBusiness():
     ideaRepository = IdeaRepository.IdeaRepository()
 
-    def SaveIdea(self, ideaAttrs):
-        idea = Idea(ideaAttrs[0], ideaAttrs[1], ideaAttrs[2])
+    def SaveIdea(self, title, contact, description, wholeIdea):
+        idea = Idea(title, contact, description, wholeIdea)
         self.ideaRepository.SaveIdea(idea)
         return "200"
 
@@ -14,4 +14,4 @@ class IdeaBusiness():
         ideaList = self.ideaRepository.GetIdeas()
         ideaSchema = IdeaSchema(many=True)
         response = ideaSchema.dumps(ideaList)
-        return {"items": response}
+        return  response
