@@ -5,19 +5,18 @@ can be developed by students or maker comunity and would still be usefull, which
 
 
 ### Project file structure
-.
-├── Business
-│   ├── IdeaBusiness.py
-│   └── __init__.py
-├── Domain
-│   ├── Idea.py
-│   └── __init__.py
-├── idea-repo-server.py
-├── readme.md
-├── readme.md.2
-└── Repository
-    ├── BaseRepository.py
-    ├── IdeaRepository.py
-    └── __init__.py
+.\
+├── Business\
+│   ├── IdeaBusiness.py\
+│   └── __init__.py\
+├── Domain\
+│   ├── Idea.py\
+│   └── __init__.py\
+├── idea-repo-server.py\
+├── readme.md\
+├── readme.md.2\
+└── Repository\
+    ├── BaseRepository.py\
+    ├── IdeaRepository.py\
+    └── __init__.py\
 
-3 directories, 10 files
