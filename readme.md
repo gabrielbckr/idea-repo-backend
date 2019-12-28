@@ -15,8 +15,8 @@ can be developed by students or maker comunity and would still be usefull, which
 ├── idea-repo-server.py\
 ├── readme.md\
 ├── readme.md.2\
-└── Repository\
-    ├── BaseRepository.py\
-    ├── IdeaRepository.py\
-    └── \__init\__.py\
+├── Repository\
+│   ├── BaseRepository.py\
+│   ├── IdeaRepository.py\
+│   └── \__init\__.py\
 
